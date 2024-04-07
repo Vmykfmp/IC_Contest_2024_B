@@ -1,0 +1,92 @@
+@verdi rc file Version 1.0
+[General]
+saveDB = TRUE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 3
+VerdiVersion = Verdi_P-2019.06
+[KeyNote]
+Line1 = invoke directory: /RAID2/COURSE/dic/dic071/2024_grad_cell_vmy
+Line2 = command line: -sverilog tb.sv Bicubic.v -v ImgROM.v -v ResultSRAM.v -ba 
+Line3 = current trace scope: testfixture
+Line4 = memo:
+Line5 = Save Open Database Information: Yes
+Line6 = Path Option: Absolute Paths
+Line7 = Windows Option: All Windows
+[OneSearch]
+isExisted = TRUE
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+Console = FALSE
+powerDumped = 0
+[hb]
+postSimFile = /RAID2/COURSE/dic/dic071/2024_grad_cell_vmy/Bicubic.fsdb
+syncTime = 172000
+viewport = 8 31 1536 793 0 0 236 1534
+activeNode = "testfixture"
+activeScope = "testfixture"
+activeFile = "tb.sv"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 9
+baMode = False
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = False
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+powerAwareAnnot = True
+amsAnnot = True
+traceCrossHier = True
+DnDtraceCrossHierOnly = True
+traceIncTopPort = False
+leadingZero = False
+signalPane = False
+Scope1 = "testfixture"
+multipleSelection = 1 9 2 0 0
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-sverilog" "tb.sv" "Bicubic.v" "-v" "ImgROM.v" "-v" "ResultSRAM.v" 
+invokeDir = /RAID2/COURSE/dic/dic071/2024_grad_cell_vmy
+[hb.sourceTab.1]
+scope = testfixture
+File = /RAID2/COURSE/dic/dic071/2024_grad_cell_vmy/tb.sv
+Line = 10
+[nMemoryManager]
+WaveformFile = /RAID2/COURSE/dic/dic071/2024_grad_cell_vmy/Bicubic.fsdb
+UserActionNum = 0
+nMemWindowNum = 1
+[nMemoryWindow_0]
+nMemGetVariable = -var testfixture.u_Bicubic.window -from DUMPED_BY_SIMULATOR -addrRange [0:3][0:3] -wordBitRange [7:0] -wordsInOneRow 8
+nMemSetTime = -time 0
+nMemSetDispOptions = -addrRadix Hex -addrColWidth 120 -valueColWidth 20
+nMemSetRadix = -format Hex -notation Unsigned
+[wave.0]
+viewPort = 0 27 1235 548 188 72
+primaryWindow = TRUE
+SessionFile = /RAID2/COURSE/dic/dic071/2024_grad_cell_vmy/Verdi.ses.wave.0
+displayGrid = FALSE
+hierarchicalName = FALSE
+snap = TRUE
+displayLeadingZeros = FALSE
+fixDelta = FALSE
+displayCursorMarker = FALSE
+autoUpdate = FALSE
+highlightGlitchs = FALSE
+waveformSyncCursorMarker = FALSE
+waveformSyncHorizontalRange = FALSE
+waveformSyncVerticalscroll = FALSE
+displayErrors = TRUE
+displayMsgSymbols = TRUE
+showMsgDescriptions = TRUE
+autoFit = FALSE
+displayDeltaY = FALSE
+centerCursor = FALSE

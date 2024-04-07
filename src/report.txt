@@ -1,0 +1,21 @@
+
+FTP account:                       B00201
+
+Level:                             A
+CYCLE:                             25.0
+Time:                              316338
+Power:                             
+Area:                              2563880
+MAX_CYCLE_PER_PATTERN              50000
+
+--- RTL category---
+HDL simulator :                    vcs 
+RTL filename :                     Bicubic.v
+
+--- Pre-layout gate-level ---
+gate-levelfilename:                Bicubic_syn.v  
+gate-level sdf filename:           Bicubic_syn.sdf        
+gate-level spef filename:          Bicubic_syn.spef       
+
+-----(annotation)--------------------------------------------------------
+ (optional, write down anything that you want raters know)

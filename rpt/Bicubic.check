@@ -1,0 +1,40 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Sun Apr  7 14:28:33 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              15
+    Cells do not drive (LINT-1)                                    15
+
+Nets                                                                8
+    Unloaded nets (LINT-2)                                          8
+--------------------------------------------------------------------------------
+
+Warning: In design 'Bicubic', cell 'C2240' does not drive any nets. (LINT-1)
+Warning: In design 'Bicubic', cell 'C2254' does not drive any nets. (LINT-1)
+Warning: In design 'Bicubic', cell 'C2255' does not drive any nets. (LINT-1)
+Warning: In design 'Bicubic', cell 'C2256' does not drive any nets. (LINT-1)
+Warning: In design 'Bicubic', cell 'C2257' does not drive any nets. (LINT-1)
+Warning: In design 'Bicubic', cell 'C2266' does not drive any nets. (LINT-1)
+Warning: In design 'Bicubic', cell 'C2276' does not drive any nets. (LINT-1)
+Warning: In design 'Bicubic', cell 'C2282' does not drive any nets. (LINT-1)
+Warning: In design 'Bicubic', cell 'C2291' does not drive any nets. (LINT-1)
+Warning: In design 'Bicubic', cell 'C2320' does not drive any nets. (LINT-1)
+Warning: In design 'Bicubic', cell 'C2321' does not drive any nets. (LINT-1)
+Warning: In design 'Bicubic', cell 'C2342' does not drive any nets. (LINT-1)
+Warning: In design 'Bicubic', cell 'C2343' does not drive any nets. (LINT-1)
+Warning: In design 'Bicubic', cell 'C2377' does not drive any nets. (LINT-1)
+Warning: In design 'Bicubic', cell 'C2388' does not drive any nets. (LINT-1)
+Warning: In design 'Bicubic', net 'sram_dout[0]' driven by pin 'u_ResultSRAM/Q[0]' has no loads. (LINT-2)
+Warning: In design 'Bicubic', net 'sram_dout[1]' driven by pin 'u_ResultSRAM/Q[1]' has no loads. (LINT-2)
+Warning: In design 'Bicubic', net 'sram_dout[2]' driven by pin 'u_ResultSRAM/Q[2]' has no loads. (LINT-2)
+Warning: In design 'Bicubic', net 'sram_dout[3]' driven by pin 'u_ResultSRAM/Q[3]' has no loads. (LINT-2)
+Warning: In design 'Bicubic', net 'sram_dout[4]' driven by pin 'u_ResultSRAM/Q[4]' has no loads. (LINT-2)
+Warning: In design 'Bicubic', net 'sram_dout[5]' driven by pin 'u_ResultSRAM/Q[5]' has no loads. (LINT-2)
+Warning: In design 'Bicubic', net 'sram_dout[6]' driven by pin 'u_ResultSRAM/Q[6]' has no loads. (LINT-2)
+Warning: In design 'Bicubic', net 'sram_dout[7]' driven by pin 'u_ResultSRAM/Q[7]' has no loads. (LINT-2)
+1

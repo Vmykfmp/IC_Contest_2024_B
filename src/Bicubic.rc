@@ -1,0 +1,138 @@
+Magic 271485
+Revision Verdi_P-2019.06
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1235 537 188 72
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/RAID2/COURSE/dic/dic071/2024_grad_cell_vmy/Bicubic.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 9833313.113336 10048009.126837
+cursor 9820000.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 3
+; marker line index
+markerPos 47
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+aliasmapname Bicubic.state
+nalias UPDT		3'b010		NULL
+nalias CALC		3'b011		NULL
+nalias IDLE		2'b00		NULL
+nalias FILL		2'b01		NULL
+nalias IDLE		3'b000		NULL
+nalias FILL		3'b001		NULL
+nalias SRAM		3'b100		NULL
+nalias FIN		3'b101		NULL
+nalias CALC		2'b10		NULL
+nalias OUT		2'b11		NULL
+
+aliasmapname testfixture.state
+nalias ST_RESET		2'b00		NULL
+nalias ST_PATTERN		2'b01		NULL
+nalias ST_RUN		2'b10		NULL
+
+addGroup "G1"
+activeDirFile "" "/RAID2/COURSE/dic/dic071/2024_grad_cell_vmy/Bicubic.fsdb"
+addSignal -h 15 /testfixture/u_Bicubic/CLK
+addSignal -h 15 -holdScope DONE
+addSignal -h 15 -holdScope RST
+addGroup "G2"
+aliasname Bicubic.state
+addSignal -h 15 -UNSIGNED -HEX /testfixture/u_Bicubic/state[2:0]
+aliasname Bicubic.state
+addSignal -h 15 -UNSIGNED -HEX -holdScope state_d1[2:0]
+aliasname Bicubic.state
+addSignal -h 15 -UNSIGNED -HEX -holdScope state_d2[2:0]
+addGroup "G3" -e FALSE
+addSignal -h 15 -UNSIGNED -UDEC /testfixture/u_Bicubic/H0[6:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope V0[6:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope SH[4:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope SW[4:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope TH[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope TW[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope H0_reg[6:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope V0_reg[6:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope SH_reg[4:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope SW_reg[4:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope SH_ext[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope SW_ext[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope TH_reg[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope TW_reg[5:0]
+addGroup "G4"
+addSignal -h 15 -UNSIGNED -UDEC /testfixture/u_Bicubic/cnt[3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope cnt_d1[3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope cnt_i[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope cnt_i_d1[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope cnt_j[5:0]
+addGroup "G5" -e FALSE
+addSignal -h 15 -UNSIGNED -UDEC /testfixture/u_Bicubic/rom_i[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope rom_j[5:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope rom_addr[13:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope rom_dout[7:0]
+addGroup "G6" -e FALSE
+addSignal -h 15 /testfixture/u_Bicubic/sram_wen
+addSignal -h 15 -UNSIGNED -UDEC -holdScope sram_addr[13:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope sram_din[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope sram_dout[7:0]
+addGroup "G7" -e FALSE
+addSignal -h 15 /testfixture/u_Bicubic/window[0:3]
+addGroup "G8" -e FALSE
+addSignal -h 15 -UNSIGNED -UDEC /testfixture/u_Bicubic/x_accu[5:0]
+addSignal -h 15 -holdScope x_move_flag
+addSignal -h 15 -UNSIGNED -UDEC -holdScope y_accu[5:0]
+addSignal -h 15 -holdScope y_move_flag
+addGroup "G9"
+addSignal -h 15 /testfixture/u_Bicubic/intp_result[7:0]
+addSignal -h 15 -holdScope intp_reg[0:3]
+addSignal -h 15 -holdScope p[0:3]
+addGroup "G10"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/RAID2/COURSE/dic/dic071/2024_grad_cell_vmy/Bicubic.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/testfixture"
+"/testfixture/u_Bicubic"
+
+SCOPE_LIST_BEGIN
+"/testfixture"
+"/testfixture/u_Bicubic"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+
